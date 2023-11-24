@@ -11,13 +11,95 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
-  <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
 
+  <body class="bg-veryDarkBlue">
+    <div class="flex items-center justify-center lg:h-screen">
+      <div
+        id="internal_Container"
+        class="bg-darkBlue mt-20 mx-7 lg:mx-auto lg:mt-0 flex flex-col-reverse lg:flex-row"
+      >
+        <div id="text" class="lg:pt-[4.5rem] lg:px-[4.375rem] lg:mr-11">
+          <div class="lg:max-w-[24rem] overflow-y-hidden">
+            <h1
+              class="font-inter text-white text-3xl lg:text-4xl font-bold leading-[2.75rem] text-center mt-8 mx-3 lg:text-left lg:mx-0 lg:mt-0"
+            >
+              Get <span class="text-softViolet">insights</span> that help your
+              business grow.
+            </h1>
+            <div class="mt-3 mx-7 lg:mx-0 lg:mt-6">
+              <p
+                class="text-whiteTransparentMainP leading-7 lg:leading-6 text-center lg:text-left"
+              >
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
+              </p>
+              <div
+                id="stats"
+                class="flex text-center flex-col lg:flex-row mt-6 lg:mt-[4.5rem] gap-8 lg:gap-16 pb-10"
+              >
+                <div id="stats_child">
+                  <p class="text-inter text-white text-2xl font-bold">10k+</p>
+                  <p
+                    class="font-lexand text-whiteTrasnparentStats font-thin text-xs pt-2"
+                  >
+                    COMPANIES
+                  </p>
+                </div>
+                <div id="stats_child">
+                  <p class="text-inter text-white text-2xl font-bold">314</p>
+                  <p
+                    class="font-lexand text-whiteTrasnparentStats font-thin text-xs pt-2"
+                  >
+                    TEMPLATES
+                  </p>
+                </div>
+                <div id="stats_child">
+                  <p class="text-inter font-bold text-white text-2xl">12M+</p>
+                  <p
+                    class="font-lexand text-whiteTrasnparentStats font-thin text-sm pt-2"
+                  >
+                    QUERIES
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img" class="bg-softViolet">
+          <picture>
+            <source
+              srcset="
+                https://raw.githubusercontent.com/Grathienbeto/stats-preview/main/images/image-header-desktop.jpg
+              "
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="
+                https://raw.githubusercontent.com/Grathienbeto/stats-preview/main/images/image-header-mobile.jpg
+              "
+              media="(min-width: 300px)"
+            />
+            <img
+              class="opacity-60 contrast-150 brightness-90"
+              alt="Our Workers"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
